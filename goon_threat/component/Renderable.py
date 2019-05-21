@@ -1,8 +1,9 @@
 class Renderable:
-  def __init__(self, image, posx, posy, depth=0):
-    self.image = image
+  def __init__(self, images, posx, posy, depth=0):
+    self.image = images[0]
     self.depth = depth
     self.x = posx
     self.y = posy
-    self.w = image.get_width()
-    self.h = image.get_height()
+    self.w = images[0].get_width()
+    self.h = images[0].get_height()
+
